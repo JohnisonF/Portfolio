@@ -1,0 +1,113 @@
+@media only screen and (max-width: 1400px) {
+    #projetos .projects .card-projeto {
+        width: 26%;
+    }
+    #carreira .cards .card-carreira {
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    #projetos .projects .card-projeto {
+        width: 30%;
+    }
+    #carreira .cards .card-carreira {
+        width: 60%;
+    }
+    #conhecimentos .tag-conhecimento {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    #conhecimentos .tag-conhecimento .block-conhecimentos {
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 992px) {
+    #projetos .projects .card-projeto {
+        width: 42%;
+    }
+    #carreira .cards .card-carreira {
+        width: 80%;
+    }
+    footer .content {
+        justify-content: center !important;
+        flex-wrap: wrap;
+    }
+    footer .content h6 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    #conhecimentos .tag-conhecimento .block-conhecimentos {
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #projetos .projects .card-projeto {
+        width: 70%;
+    }
+    #carreira .cards .card-carreira {
+        width: 100%;
+    }
+    #carreira .cards .card-carreira .content-job p {
+        font-size: 11px;
+    }
+    #carreira .cards .card-carreira .content-job p strong {
+        font-size: 12px;
+    }
+    .carousel .carousel-track .img-carousel {
+        width: 500px;
+        height: 275px;
+    }
+    #conhecimentos .tag-conhecimento .block-conhecimentos {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 576px) {
+    #projetos .projects .card-projeto {
+        width: 82%;
+    }
+    #carreira .cards .card-carreira {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #carreira .cards .card-carreira .img-job {
+        margin-right: 0px;
+    }
+    header nav {
+        flex-direction: column !important;
+    }
+    header nav a {
+        margin-bottom: 15px;
+        margin-right: 0px;
+    }
+    .carousel .carousel-track .img-carousel {
+        width: 415px;
+        height: 240px;
+    }
+}
+@media only screen and (max-width: 502px) {
+    .carousel .carousel-track .img-carousel {
+        width: 310px;
+        height: 180px;
+    }
+    #conhecimentos .tag-conhecimento {
+        padding: 0px 0px;
+    }
+    #conhecimentos .tag-conhecimento .bg-icon {
+        width: 40px;
+        height: 40px;
+    }
+    #conhecimentos .tag-conhecimento .bg-icon svg {
+        width: 30px;
+        height: 30px;
+    }
+    #conhecimentos .tag-conhecimento .block-conhecimentos span {
+        font-size: 13px;
+    }
+}
+
+
+

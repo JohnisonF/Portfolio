@@ -1,0 +1,127 @@
+@import url('./assets/css/variables.css');
+@import url('./assets/css/header.css');
+@import url('./assets/css/content.css');
+@import url('./assets/css/responsive.css');
+@import url('./assets/css/footer.css');
+
+* {
+  font-family: 'Roboto Mono';
+  color: var(--font-primary);
+  box-sizing: border-box;
+}
+
+body, html {
+  overflow-x: hidden;
+}
+
+body {
+  background: radial-gradient(circle, rgba(30, 76, 156, 0.5) 1%, rgba(0, 0, 0, 1) 74%, rgba(0, 0, 0, 1) 100%);
+  background-position-y: -400px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  position: relative;
+  z-index: 10;
+  scroll-margin-top: 50px;
+}
+section h2 {
+  margin: 90px 0px;
+}
+
+.color-secondary {
+  color: var(--font-secondary);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-120px);
+  transition: all 0.8s ease-out;
+}
+.reveal-left.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(120px);
+  transition: all 0.8s ease-out;
+}
+.reveal-right.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 60px auto;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 40px;
+  transition: transform 0.6s ease;
+}
+
+.carousel-track .img-carousel {
+  width: 600px;
+  height: 350px;
+  background-size: cover;
+  border-radius: 16px;
+  opacity: 0.4;
+  transform: scale(0.85);
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+/* slide ativo */
+.carousel-track .img-carousel.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* slides próximos */
+.carousel-track .img-carousel.near {
+  opacity: 0.7;
+  transform: scale(0.80);
+}
+
+/* botões */
+.nav {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 48px;
+  cursor: pointer;
+  padding: 0 10px;
+  z-index: 10;
+}
+
+.carousel button.nav div {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 11px;
+  padding-left: 1px;
+  border-radius: 15px;
+  background-color: #00000050;
+}
+
+.carousel .nav.next {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  right: 0%;
+  top: 50%;
+}
+.carousel .nav.next.disable div, .carousel .nav.prev.disable div {
+  color: #2d2d2d;
+}
