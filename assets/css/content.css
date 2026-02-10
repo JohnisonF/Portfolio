@@ -442,6 +442,13 @@ main .box-animate div {
     border-radius: 5px;
     border: 1px solid #3d444db3;
     width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#github-projects .repositories .card-repository .top {
+    flex-grow: 1;
 }
 #github-projects .repositories .card-repository .top img{
     width: 30px;
@@ -450,6 +457,7 @@ main .box-animate div {
 }
 #github-projects .repositories .card-repository .top span {
     font-weight: 600;
+    font-size: 15px;
 }
 #github-projects .repositories .card-repository .top span,
 #github-projects .repositories .card-repository .content,
