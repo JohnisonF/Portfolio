@@ -431,6 +431,21 @@ main .box-animate div {
 }
 
 
+#github-projects .button-github {
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 18px;
+    background-color: #22262d;
+    color: white;
+    font-family: 'Mona Sans', 'Roboto Mono', 'Lexend', 'Roboto';
+    padding: 10px 25px;
+    border: 1px solid transparent;
+    transition: all ease 0.3s;
+}
+#github-projects .button-github:hover {
+    border-color: #3d4a5b;
+    text-decoration: underline;
+}
 #github-projects .repositories {
     display: flex;
     justify-content: space-between;
@@ -446,6 +461,7 @@ main .box-animate div {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 40px;
 }
 #github-projects .repositories .card-repository .top {
     flex-grow: 1;

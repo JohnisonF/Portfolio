@@ -47,7 +47,6 @@
     }
     #github-projects .repositories .card-repository {
         width: 60%;
-        margin-bottom: 40px;
     }
     #github-projects .repositories .card-repository .content {
         height: 100px;
