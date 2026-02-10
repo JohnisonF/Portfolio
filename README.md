@@ -8,5 +8,5 @@ O projeto é o código fonte do meu portifólio (https://johnisonf.com). Esse c�
 
 `/assets`: Pasta contendo todos os arquivos de css, funções de javascript e imagens (não listadas).
 
-`functions.js`: Arquivo principal javascript para rodar as funções exportadas de arquivos dentro da pasta `assets/js`.
+`functions.js`: Arquivo principal javascript para rodar as funções todas as funções desse e de outros arquivos na pasta `assets/js`.
 

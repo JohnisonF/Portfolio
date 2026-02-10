@@ -42,6 +42,16 @@
     #conhecimentos .tag-conhecimento .block-conhecimentos {
         width: 70%;
     }
+    #github-projects .repositories {
+        justify-content: center;
+    }
+    #github-projects .repositories .card-repository {
+        width: 60%;
+        margin-bottom: 40px;
+    }
+    #github-projects .repositories .card-repository .content {
+        height: 100px;
+    }
 }
 @media only screen and (max-width: 768px) {
     #projetos .projects .card-projeto {
@@ -62,6 +72,10 @@
     }
     #conhecimentos .tag-conhecimento .block-conhecimentos {
         width: 100%;
+    }
+    #github-projects .repositories .card-repository {
+        width: 100%;
+        margin-bottom: 40px;
     }
 }
 @media only screen and (max-width: 576px) {
@@ -106,6 +120,12 @@
     }
     #conhecimentos .tag-conhecimento .block-conhecimentos span {
         font-size: 13px;
+    }
+    #github-projects .repositories .repository-name {
+        font-size: 14px;
+    }
+    #github-projects .repositories .content {
+        font-size: 12px !important;
     }
 }
 

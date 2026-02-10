@@ -429,3 +429,79 @@ main .box-animate div {
     height: 30px;
     margin-right: 15px;
 }
+
+
+#github-projects .repositories {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#github-projects .repositories .card-repository {
+    background-color: #0d1117;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #3d444db3;
+    width: 30%;
+}
+#github-projects .repositories .card-repository .top img{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+#github-projects .repositories .card-repository .top span {
+    font-weight: 600;
+}
+#github-projects .repositories .card-repository .top span,
+#github-projects .repositories .card-repository .content,
+#github-projects .repositories .card-repository .bottom span {
+    font-family: 'Mona Sans', 'Roboto Mono', 'Lexend', 'Roboto';
+}
+#github-projects .repositories .card-repository .bottom span {
+    font-size: 14px;
+}
+#github-projects .repositories .card-repository .bottom {
+    display: flex;
+}
+#github-projects .repositories .card-repository .bottom span.number {
+    border-radius: 2em;
+    background-color: #22262d;
+    width: 20px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    cursor: default;
+}
+#github-projects .repositories .card-repository .bottom .forks {
+    margin-right: 10px;
+}
+#github-projects .repositories .card-repository .separator {
+    width: 100%;
+    height: 1px;
+    background-color: #3d444db3;
+    margin: 8px 0px;
+}
+#github-projects .repositories .card-repository .content {
+    height: 135px;
+    font-size: 13px;
+}
+#github-projects .repositories .card-repository .bottom .stars-forks,
+#github-projects .repositories .card-repository .bottom .stars-forks > div {
+    display: flex;
+    align-items: center;
+}
+#github-projects .repositories .card-repository .bottom {
+    justify-content: space-between;
+}
+#github-projects .repositories .card-repository .bottom a {
+    display: flex;
+    padding: 2px;
+    transition: all ease 0.3s;   
+    border-radius: 5px;
+}
+#github-projects .repositories .card-repository .bottom a:hover {
+    background-color: #22262d;
+}
+#github-projects .repositories .card-repository .bottom .stars-forks svg {
+    fill: #9198a1;
+}
